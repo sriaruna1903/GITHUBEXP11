@@ -10,6 +10,5 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-
-      - name: Run a broken command
-        run: npminstal # ❌ Intentional typo (should be 'install')
+      - name: Run npm install
+        run: npm install
