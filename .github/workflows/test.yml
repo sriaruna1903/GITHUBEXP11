@@ -1,4 +1,4 @@
-name: SampleCIWorkflow
+name: Sample CI Workflow
 
 on:
   push:
@@ -7,8 +7,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+
       - name: Run npm install
         run: npm install
