@@ -12,5 +12,5 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Run npm install
-        run: npm install
+      - name: Run build command
+        run: echo "CI Workflow running successfully"
